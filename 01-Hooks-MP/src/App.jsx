@@ -21,6 +21,7 @@ function App() {
       <h2>COUNTER VALUE: {counter}</h2>
       <button onClick={addValue}>Add Value</button>
       <button onClick={removeValue}>Remove Value</button>
+      <p>The current value of counter is {counter}</p>
     </>
   )
 }
