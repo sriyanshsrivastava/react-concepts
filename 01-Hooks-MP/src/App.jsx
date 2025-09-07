@@ -4,15 +4,18 @@ import './App.css'
 function App() {
 
   // const counter = 15;
-  let [counter,setCounter]=useState(15)
+  let [counter,setCounter]=useState(0)
 
   const addValue=()=>{
-    setCounter(counter+1);
+    setCounter(counter>=20?counter:counter+1); // preventig counter not to go above 20, using ternery statement
 
   }
 
   const removeValue=()=>{
-    setCounter(counter-1);
+    if (counter>0){ // preventig counter not to be negative, using if-else statement
+      setCounter(counter-1);
+    }
+    
   }
 
   return (
